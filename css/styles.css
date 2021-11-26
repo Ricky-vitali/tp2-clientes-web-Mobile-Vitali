@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.fluid-container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    padding: 4rem;
+}
+
+.fluid-container > div{
+
+    background: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 10px 10px 6px rgba(90, 90, 90, 0.6);
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    overflow-y: auto;
+    
+}
+
+.form-control{
+    margin-bottom: 1rem;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    margin-bottom: 0 !important;
+}
+
+.form-group label{
+    margin-right: 1rem;
+}
+
+.form-group .btn{
+    /* background: #333; */
+    /* color: #fff; */
+    margin-left: 1rem;
+}
+
+dl{
+    border: 1px solid #333;
+}
+
+dt{
+    background: #fcfcfc;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #333;
+    padding: 0.5rem;
+}
+
+dd{
+    padding: 0.4rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid rgba(230, 230, 230, .8);
+
+}
+
+dd:last-of-type{
+    border: none;
+}
+
+/* Modal */
+
+.miModalBackground{
+    position: absolute;
+    top: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.mainModal{
+    margin-top: 50px;
+    width: 500px;
+    background-color: whitesmoke;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.mainModal p {
+    
+    padding-bottom: 25px;
+}
+
+h2{
+    text-align: center;
+}
+
+.addBtn{
+    color: white;
+    font-size: 12px;
+    background-color: green;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+ul li:hover{
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #0d6efd;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+ul li{
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: whitesmoke;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#closeModal{
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 475px;
+}
+
+.deleteBtn{
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: rgb(168, 0, 0);
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    position: relative;
+    left: 15px;
+}
+
+.listDiv{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.divMovieFound{
+    display: inline-block;
+    padding: 25px;
+    
+}
+
+.divMovieFound p{
+    text-align: center;
+    width: 150px;
+}
+.divMovieFound img{
+    height: 100px;
+    width: auto;
+    display: flex;
+    margin: auto;
+}

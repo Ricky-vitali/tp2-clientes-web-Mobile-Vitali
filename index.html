@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <title>Ricardo Vitali, Comision A PWA</title>
+    <!-- <script src="scripts/register-sw.js" defer></script> -->
+    <script src="scripts/register-sw.js"></script>
+    <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+
+        <div class="fluid-container">
+            <div class="main">
+                <h1 class="mb-4 text-center">CinemaList</h1>
+                <div>
+                    <ul>
+                        <li>Tu Lista</a></li>
+                        <li>Buscar Random</a></li>
+                    </ul>
+                </div>
+
+                <div class="form-control">
+                    <div class="form-label">
+                        <form>
+                            <div class="form-group">
+                                <label for="movie" class="visually-hidden">Buscar Pelicula</label>
+                                <input type="text" name="movie" id="movie" placeholder="Buscar Pelicula/Serie" class="form-control">
+                                <input type="submit" value="Buscar" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <p id="conecLost" style="display:none; color: red;">Te has quedado sin conexion</p>
+                <p id="error" style="display:none; color: red;">No se pudo encontrar la película.</p>
+                <p id="movieAdded" style="display:none; color: green;">Pelicula agregada a tu lista.</p>
+
+                <div class="movieList" style="display:none"></div>
+            </div>
+        </div>
+        
+         <div class="miModalBackground" style="display: none;">
+            <div class="mainModal">
+                <span id="closeModal">X</span>
+                <h2>Tu lista</h2>
+                <div class="myList">
+
+                </div>
+               
+            </div>
+        </div> 
+    </div>
+
+</body>
+
+</html>
