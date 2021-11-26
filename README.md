@@ -10,12 +10,17 @@ Instrucciones de uso:
 -Haciendo click en "Tu Lista" podras ver las peliculas que hayas agregado o tambien removerlas si es que hay.
 -Presionando el boton "Pelicula Random" buscara una pelicula de manera aleatoria.
 
--El sitio notificara en caso de quedarse sin conexion y tambien si es que se han agregado cosas al listado.
+-El sitio notificara en caso de quedarse sin conexion y tambien si es que se han agregado cosas al listado. Tambien notificara si escribio una pelicula inexistente.
+-Las peliculas se guardan en el localstorage
+-El sitio utiliza service worker por lo tanto se podra seguir "usando" limitadamente el sitio. Sin embargo tambien se vera limitado el listado.
+-El sitio puede instalarse desde vercel.
+
 
 
 
 ------------------------------------------------------------------------------------------------------------------------------
 DATO DE VITAL IMPORTANCIA:
 
--La api puede tener "lag" y tardar.
+-La api puede tener "lag" y tardar. Esto se nota mas en la version de vercel
+-Sin conexion no se podra buscar peliculas ni tampoco de manera aleatoria, evidentemente.
 
