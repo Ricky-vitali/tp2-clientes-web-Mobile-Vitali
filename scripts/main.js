@@ -188,7 +188,7 @@ function randomMovie(){
         console.log(res)
         answer.innerHTML = "";
         let div = document.createElement('div');
-        div.setAttribute('data-id', movie.imdbID);
+        div.setAttribute('data-id', res.imdbID);
         div.classList.add('divMovieFound');
 
         let movieTitle = document.createElement('p');
