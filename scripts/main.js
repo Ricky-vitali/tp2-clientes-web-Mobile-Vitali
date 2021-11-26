@@ -27,7 +27,7 @@ document.querySelector('.main form').addEventListener('submit', e => {
     e.preventDefault();
     let movie = e.target.querySelector('input').value;
     if (movie !== '') {
-        fetch(`http://www.omdbapi.com/?s=${movie}&plot=full&apikey=${API_KEY}`)
+        fetch(`https://www.omdbapi.com/?s=${movie}&plot=full&apikey=${API_KEY}`)
             .then(res => {
                 if (res.status == 200) {
                     console.log("Tiro 200")
@@ -115,7 +115,7 @@ function showMovie(movieContent) {
         divList.innerHTML = '';
         if (myList.length > 0) {
             myList.forEach((movie, index) => {
-                fetch(`http://www.omdbapi.com/?i=${movie}&plot=full&apikey=${API_KEY}`) // Copiar esta petición para la solicitud de la película random
+                fetch(`https://www.omdbapi.com/?i=${movie}&plot=full&apikey=${API_KEY}`) // Copiar esta petición para la solicitud de la película random
                     .then(res => res.json())
                     .then(res => {
                         let div = document.createElement('div');
@@ -182,7 +182,7 @@ function randomMovie(){
     } 
     console.log(randomPos)
 
-    fetch(`http://www.omdbapi.com/?i=${popularFilms[randomPos]}&plot=full&apikey=${API_KEY}`)
+    fetch(`https://www.omdbapi.com/?i=${popularFilms[randomPos]}&plot=full&apikey=${API_KEY}`)
     .then(res => res.json())
     .then(res => {
         console.log(res)
