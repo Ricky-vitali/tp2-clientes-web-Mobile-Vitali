@@ -206,6 +206,12 @@ function randomMovie(){
         let movieID = element.parentElement.getAttribute('data-id');
         myList.push(movieID);
         localStorage.setItem('myList', JSON.stringify(myList));
+            document.querySelector('#movieAdded').style.display = 'block';
+
+            setTimeout(() => {
+                document.querySelector('#movieAdded').style.display = 'none';
+            }, 3000);
+
         })
 
         div.appendChild(movieTitle)
